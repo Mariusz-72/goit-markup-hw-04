@@ -15,6 +15,7 @@
     --white: #ffffff;
     --vanila-white: #f5f4fa;
     --light-grey: #757575;
+    --extra-light-grey:#AFB1B8;
     --lines-color: #e5e5e5;
     --vanila: #eeeeee;
 }
@@ -37,9 +38,14 @@ a
     text-decoration: none;
     color: var(--light-grey);
 }
+a:hover,
+a:focus,
+a:active 
+{
+    color: var(--blue);
+}
 
 img {
-
     display: block;
     max-width: 100%;
     height: auto;
@@ -83,7 +89,7 @@ h1,h2,h3,h4,p
     border-bottom: solid 2px;
     border-color: var(--lines-color);
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     background: var(--white);
 }
@@ -100,6 +106,7 @@ h2
 .menu-navigation
 {   
     width: 254px;
+    height:80px;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
@@ -162,30 +169,73 @@ h2
 .menu-contact
 {
     justify-content: space-between;
-    align-items: center;   
+    align-items: center; 
+    display:flex;
+
 }
 
 .contactbox
 {
-    width: 550px;  
-    padding-right: 227px;
+    width: 490px;  
+    display:flex;
 }
 .contacts
 {
-    list-style: none;
+    width:400px;
+    height: 80px;
     display:flex;
     justify-content: space-between;
     
     
 }
 
-
+.contact-link 
+{
+    width:200px;
+    height: 36px;
+    margin-top: 30px;
+    display:flex;
+    color: var(--light-grey);
+}
 .contact-link:hover,
 .contact-link:focus,
 .contact-link:active 
 {
     color: var(--blue);
+    fill: var(--blue);    
 }
+.envelope
+{
+    width:16px;
+    height:12px;
+    margin-right: 12px;
+    margin-top:3px;
+}
+.smartphone
+{
+    width:16px;
+    height:16px;
+    margin-right: 12px;
+}
+.telnumber
+{    
+    height: 16px;
+    display:flex;
+
+}
+.mailadress
+{
+    
+    height: 16px;
+    display:flex;
+    
+}
+
+
+
+
+
+
 
 /* main part  upper*/
 
@@ -305,12 +355,10 @@ h2
     padding: 10px;
 }
 
+                        /* main part  lowest  */
+                        /* main part  lowest  */
+                        /* main part  lowest  */
 
-
-
-
-
-/* main part  lowest*/
 .main-block-lowest
 {
     background-color: var(--vanila-white);
@@ -340,7 +388,7 @@ h2
 
 .team-person
 {
-    padding-top: 30px;
+    padding-top: 25px;
     padding-bottom: 30px;
     text-align: center;
 }
@@ -365,10 +413,99 @@ h2
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--light-grey);
+    margin-bottom: 5px;
 }
 
-/* footer*/
+.main-block-lowest-socialmedia
+{
+    display:flex;
+    justify-content:center;
+    gap:7px;
+    
+}
 
+.main-block-our-team-item
+{
+    fill:  var(--extra-light-grey);
+    background: var(--white);
+}
+
+.socialmedia
+{
+    width:44px;
+    height:44px;
+    padding: 10px;
+}
+
+
+.main-block-our-team-item:hover,
+.main-block-our-team-item:focus
+{
+    fill: var(--white); 
+    background: var(--blue); 
+    border-radius: 50%; 
+    
+}
+
+                        /* main part  our team*/
+                        /* main part  our team*/
+                        /* main part  our team*/
+
+.main-block-our-customers
+{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-block-our-customers-list
+{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+}
+
+.main-block-our-customers-item
+{
+    fill: var(--extra-light-grey);
+    flex-basis: auto;
+    padding: 15px 12px 6px;
+    border:1px solid var(--extra-light-grey);
+    border-radius: 5px;
+    
+}
+
+.main-block-our-customers-item:hover,
+.main-block-our-customers-item:active,
+.main-block-our-customers-item:focus
+{
+  fill: var(--blue); 
+  border-color: var(--blue); 
+}
+
+
+.group
+{
+    height: 72px;
+    width: 146px;
+    padding: 16px 32px 16px
+    
+}
+
+
+                        /* footer*/
+                        /* footer*/
+                        /* footer*/
+
+footer.container
+{
+    display:flex;
+}
+.container-left
+{
+    display:block;
+}
 .footerlist
 {
     list-style-type: none;
@@ -435,6 +572,56 @@ footer
     letter-spacing: 3%;
     color: var(--white);
 }
+
+
+.socialmedia-text
+{
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    margin: 75px 0px 30px 10px;
+}
+
+.social-box
+{
+    margin-left: 50px;
+}
+
+.footer-socialmedia-list
+{
+    display: flex;
+    list-style: none;
+    gap:15px;
+    margin: 10px  30px 30px 0px;
+    
+    background: var(--background-grey);
+}
+
+.footer-list-item
+{
+fill:  var(--white);
+background: rgba(255, 255, 255, 0.1);
+border-radius: 50%;
+}
+
+
+.footer-socialmedia-icon
+{
+width:44px;
+height:44px;
+padding: 8px;
+fill:  var(--white);
+}
+
+.footer-list-item:hover,
+.footer-list-item:focus
+{ 
+    background: var(--blue); 
+    border-radius: 50%; 
+}
+
+
+
+
 
 
 /* portfolio styles */
