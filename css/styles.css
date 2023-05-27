@@ -18,9 +18,10 @@
     --extra-light-grey:#AFB1B8;
     --lines-color: #e5e5e5;
     --vanila: #eeeeee;
+    --antenna-grey:#f4f5fa;
 }
 
-/*main elements*/
+/*main elements  main elements  main elements   */
 body
 {
     font-family: "roboto", sans-serif;
@@ -56,7 +57,7 @@ h1,h2,h3,h4,p
     margin: 0px;
 }
 
-/* general classes*/
+/* general classes general classes  general classes */
 
 .main-block-title
 {
@@ -78,9 +79,7 @@ h1,h2,h3,h4,p
     color: var(--white);  
 }
 
-
-
-/* navigation part */
+/* navigation part navigation part navigation part */
 
 .header-outfield
 {
@@ -184,9 +183,7 @@ h2
     width:400px;
     height: 80px;
     display:flex;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;    
 }
 
 .contact-link 
@@ -197,6 +194,7 @@ h2
     display:flex;
     color: var(--light-grey);
 }
+
 .contact-link:hover,
 .contact-link:focus,
 .contact-link:active 
@@ -204,6 +202,7 @@ h2
     color: var(--blue);
     fill: var(--blue);    
 }
+
 .envelope
 {
     width:16px;
@@ -211,33 +210,30 @@ h2
     margin-right: 12px;
     margin-top:3px;
 }
+
 .smartphone
 {
     width:16px;
     height:16px;
     margin-right: 12px;
 }
+
 .telnumber
 {    
     height: 16px;
     display:flex;
-
 }
+
 .mailadress
 {
     
     height: 16px;
     display:flex;
-    
 }
 
-
-
-
-
-
-
-/* main part  upper*/
+                        /* main part  upper*/
+                        /* main part  upper*/
+                        /* main part  upper*/
 
 .main-block-upper
 {
@@ -248,7 +244,7 @@ h2
     text-align: center;
     padding: 200px 0;
     color: var(--white);
-    
+    background-image: url(./imgbackground.jpg);
     
 }
 
@@ -263,7 +259,6 @@ h2
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
-    
 }
 
 .button-order
@@ -283,18 +278,22 @@ h2
 }
 
 
-
-
-/* main part  middle*/
+                        /* main part  middle*/
+                        /* main part  middle*/
+                        /* main part  middle*/
 
 
 .main-block-middle
 {
-    background-color: var(--white);
     padding-bottom: 0px;
     margin: 0px;
     justify-content: space-between;
     gap: 30px;
+}
+
+.container-antenna
+{
+    height: 251px; 
 }
 
 .main-block-middle-list 
@@ -303,6 +302,7 @@ h2
     gap: 30px;
     justify-content: center;
     list-style: none;
+    margin-bottom: 50px;
 }
 
 .main-block-middle-item
@@ -329,10 +329,20 @@ h2
     width: 270px;
 }
 
+.middle-icon
+{
+    fill: var(--black);
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    background-color: var(--antenna-grey);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
 
-
-
-/* main part  lower*/
+                        /* main part  lower*/
+                        /* main part  lower*/
+                        /* main part  lower*/
 
 .main-block-lower
 {
@@ -437,14 +447,12 @@ h2
     padding: 10px;
 }
 
-
 .main-block-our-team-item:hover,
 .main-block-our-team-item:focus
 {
     fill: var(--white); 
     background: var(--blue); 
     border-radius: 50%; 
-    
 }
 
                         /* main part  our team*/
@@ -473,26 +481,22 @@ h2
     padding: 15px 12px 6px;
     border:1px solid var(--extra-light-grey);
     border-radius: 5px;
-    
 }
 
 .main-block-our-customers-item:hover,
 .main-block-our-customers-item:active,
 .main-block-our-customers-item:focus
 {
-  fill: var(--blue); 
-  border-color: var(--blue); 
+    fill: var(--blue); 
+    border-color: var(--blue); 
 }
-
 
 .group
 {
     height: 72px;
     width: 146px;
-    padding: 16px 32px 16px
-    
+    padding: 16px 32px 16p;
 }
-
 
                         /* footer*/
                         /* footer*/
@@ -502,15 +506,16 @@ footer.container
 {
     display:flex;
 }
+
 .container-left
 {
     display:block;
 }
+
 .footerlist
 {
     list-style-type: none;
     margin-left: 215px;
-    
 }
 
 .adres
@@ -534,7 +539,6 @@ footer.container
     line-height: 24px;
     text-decoration: none;
     opacity: 0.6;
-    
 }
 
 footer
@@ -549,7 +553,6 @@ footer
 {
     margin-top: 60px;
     margin-left: 215px;
-    
 }
 
 .logo-web{
@@ -592,24 +595,22 @@ footer
     list-style: none;
     gap:15px;
     margin: 10px  30px 30px 0px;
-    
     background: var(--background-grey);
 }
 
 .footer-list-item
 {
-fill:  var(--white);
-background: rgba(255, 255, 255, 0.1);
-border-radius: 50%;
+    fill:  var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
-
 
 .footer-socialmedia-icon
 {
-width:44px;
-height:44px;
-padding: 8px;
-fill:  var(--white);
+    width:44px;
+    height:44px;
+    padding: 8px;
+    fill:  var(--white);
 }
 
 .footer-list-item:hover,
