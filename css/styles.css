@@ -244,7 +244,7 @@ h2
     text-align: center;
     padding: 200px 0;
     color: var(--white);
-    background: url(./imgbackground.jpg);
+    background: url(../imgbackground.jpg);
     box-shadow: inset 0px 0px 40px 800px rgba(47,48,58,0.4), 
                     0px 5px 6px 0px rgba(0,0,0,0.8);
 }
