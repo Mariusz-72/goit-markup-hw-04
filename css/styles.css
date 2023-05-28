@@ -244,8 +244,9 @@ h2
     text-align: center;
     padding: 200px 0;
     color: var(--white);
-    background-image: url(./imgbackground.jpg);
-    
+    background: url(./imgbackground.jpg);
+    box-shadow: inset 0px 0px 40px 800px rgba(47,48,58,0.4), 
+                    0px 5px 6px 0px rgba(0,0,0,0.8);
 }
 
 .main-title
@@ -259,6 +260,9 @@ h2
     width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
+    text-shadow: 0px 4px 4px var(--black) ;
+    -webkit-text-stroke: 1px var(--black);
+    
 }
 
 .button-order
@@ -623,9 +627,9 @@ footer
 
 
 
-
-
-/* portfolio styles */
+                        /* portfolio styles */
+                        /* portfolio styles */
+                        /* portfolio styles */
 
 .main-block-porfolio
 {
@@ -680,8 +684,17 @@ footer
     margin-bottom: 30px;          
     list-style-type: none; 
     
-    
 }
+
+.card-shadow:hover,
+.card-shadow:focus
+{
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+                0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
 
 .container-protfolio
 {
