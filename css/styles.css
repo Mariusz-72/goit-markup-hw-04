@@ -21,7 +21,7 @@
     --antenna-grey:#f4f5fa;
 }
 
-/*main elements  main elements  main elements   */
+                    /*main elements  main elements  main elements   */
 body
 {
     font-family: "roboto", sans-serif;
@@ -57,7 +57,7 @@ h1,h2,h3,h4,p
     margin: 0px;
 }
 
-/* general classes general classes  general classes */
+                    /* general classes general classes  general classes */
 
 .main-block-title
 {
@@ -79,7 +79,7 @@ h1,h2,h3,h4,p
     color: var(--white);  
 }
 
-/* navigation part navigation part navigation part */
+                    /* navigation part navigation part navigation part */
 
 .header-outfield
 {
@@ -167,68 +167,71 @@ h2
 
 .menu-contact
 {
+    width: 490px;
     justify-content: space-between;
     align-items: center; 
-    display:flex;
-
 }
 
-.contactbox
-{
-    width: 490px;  
-    display:flex;
-}
+
+
 .contacts
 {
     width:400px;
     height: 80px;
     display:flex;
-    justify-content: space-between;    
+    justify-content:center; 
+    gap: 30px;  
 }
+
+
 
 .contact-link 
 {
-    width:200px;
-    height: 36px;
-    margin-top: 30px;
+    width:161px;
+    height: 16px;
+    line-height: 16px;
+    letter-spacing:0.02px;
+    margin-top: 32px;
     display:flex;
     color: var(--light-grey);
 }
 
 .contact-link:hover,
 .contact-link:focus,
-.contact-link:active 
+.contact-link:active
 {
     color: var(--blue);
-    fill: var(--blue);    
+    fill: var(--blue); 
+    cursor: pointer; 
 }
 
 .envelope
 {
     width:16px;
     height:12px;
-    margin-right: 12px;
-    margin-top:3px;
+    margin-right: 10px;
+    color: var(--light-grey);
 }
+
 
 .smartphone
 {
-    width:16px;
+    width:10px;
     height:16px;
-    margin-right: 12px;
+    margin-right: 10px;
+    margin-bottom: -3px;
+    color: var(--light-grey);
 }
 
 .telnumber
 {    
     height: 16px;
-    display:flex;
+    width: 130px;
 }
 
 .mailadress
 {
-    
     height: 16px;
-    display:flex;
 }
 
                         /* main part  upper*/
@@ -449,7 +452,7 @@ h2
 {
     width:44px;
     height:44px;
-    padding: 10px;
+    padding: 12px;
 }
 
 .main-block-our-team-item:hover,
@@ -458,6 +461,7 @@ h2
     fill: var(--white); 
     background: var(--blue); 
     border-radius: 50%; 
+    cursor: pointer;
 }
 
                         /* main part  our team*/
@@ -473,19 +477,27 @@ h2
 
 .main-block-our-customers-list
 {
+    height: 92px;
     display: flex;
     list-style: none;
     gap: 30px;
     justify-content: center;
+    
+    
 }
 
 .main-block-our-customers-item
 {
+    width: 170px;
+    height: 92px;
     fill: var(--extra-light-grey);
-    flex-basis: auto;
-    padding: 15px 12px 6px;
     border:1px solid var(--extra-light-grey);
     border-radius: 5px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    
+    
 }
 
 .main-block-our-customers-item:hover,
@@ -493,14 +505,16 @@ h2
 .main-block-our-customers-item:focus
 {
     fill: var(--blue); 
-    border-color: var(--blue); 
+    border-color: var(--blue);
+    cursor: pointer; 
 }
 
 .group
 {
-    height: 72px;
-    width: 146px;
-    padding: 16px 32px 16p;
+    height: 60px;
+    width: 106px;
+    
+    
 }
 
                         /* footer*/
@@ -605,6 +619,8 @@ footer
 
 .footer-list-item
 {
+    height: 44px;
+    width: 44px;
     fill:  var(--white);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
@@ -614,7 +630,7 @@ footer
 {
     width:44px;
     height:44px;
-    padding: 8px;
+    padding: 12px;
     fill:  var(--white);
 }
 
@@ -623,6 +639,7 @@ footer
 { 
     background: var(--blue); 
     border-radius: 50%; 
+    cursor: pointer; 
 }
 
 
